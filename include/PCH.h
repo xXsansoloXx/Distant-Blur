@@ -9,5 +9,7 @@
 #include <string>
 #include <vector>
 
+#include "Utils.h"
+
 namespace logger = SKSE::log;
 using namespace std::literals;
