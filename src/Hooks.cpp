@@ -14,7 +14,7 @@ namespace Hooks {
 
 	void TemplateStruct::Install() {
 		auto& trampoline = SKSE::GetTrampoline();
-		originalFunction = trampoline.write_call<5>(REL::RelocationID(0, 0).address() + REL::Relocate(0x0, 0x0)), TemplateStruct::TemplateHook);
+		//originalFunction = trampoline.write_call<5>(REL::RelocationID(0, 0).address() + REL::Relocate(0x0, 0x0)), TemplateStruct::TemplateHook);
 		logger::info("Installed jump state hook");
 	}
 

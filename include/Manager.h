@@ -6,5 +6,5 @@
 #include "Settings.h"
 
 namespace Manager {
-	
+	void Initialize();
 }

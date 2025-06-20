@@ -1,6 +1,7 @@
 #include "PCH.h"
 #include "logger.h"
 #include "MCP.h"
+#include "Manager.h"
 
 void OnMessage(SKSE::MessagingInterface::Message* message) {
 	// Handle messages from SKSE called in order of first to last occurance
@@ -33,6 +34,7 @@ void OnMessage(SKSE::MessagingInterface::Message* message) {
     }
     if (message->type == SKSE::MessagingInterface::kDataLoaded) {
         // Sent after the data handler has loaded all its forms
+		Manager::Initialize();
     }
 
 }
